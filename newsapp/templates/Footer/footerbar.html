@@ -1,0 +1,149 @@
+{% load static %}
+<div class="container-fluid fh5co_footer_bg pb-3">
+    <div class="container animate-box">
+        <div class="row">
+            <div class="col-12 spdp_right py-5">
+                <img src="{% static 'images/white_logo.png' %}" alt="img" class="footer_logo" />
+            </div>
+            <div class="clearfix"></div>
+
+            <!-- ===== SECTION - 1 ===== -->
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="footer_main_title py-3"> About</div>
+                <div class="footer_sub_about pb-3">
+                    From breaking news and politics to business, entertainment, sports, and more, we strive to provide comprehensive coverage that is fair, accurate, and objective. So whether you're at home, at work, or on the go, stay tuned to 24 News for the latest news and information from around the world.
+                </div>
+                <div class="footer_mediya_icon">
+                    <div class="text-center d-inline-block">
+                        <a class="fh5co_display_table_footer">
+                            <div class="fh5co_verticle_middle">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center d-inline-block">
+                        <a class="fh5co_display_table_footer">
+                            <div class="fh5co_verticle_middle">
+                                <i class="fa fa-google-plus"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center d-inline-block">
+                        <a class="fh5co_display_table_footer">
+                            <div class="fh5co_verticle_middle">
+                                <i class="fa fa-twitter"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center d-inline-block">
+                        <a class="fh5co_display_table_footer">
+                            <div class="fh5co_verticle_middle">
+                                <i class="fa fa-facebook"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SECTION - 2 ===== -->
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="footer_main_title py-3"> Category</div>
+                <ul class="footer_menu">
+                    <li>
+                        <a href="{% url 'Business_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">Business</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Entertainment_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">Entertainment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'General_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">General</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Health_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">Health</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Sports_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">Sports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Technology_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">Technology</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'World_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">World</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ===== SECTION - 2 ===== -->
+            <div class="col-12 col-md-4 col-lg-4 position_footer_relative">
+                <!-- <div class="footer_main_title py-3"> Most Viewed Posts</div>
+                <div class="footer_makes_sub_font"> Dec 31, 2016</div>
+                <a href="#" class="footer_post pb-4"> Success is not a good teacher failure makes you humble </a>
+                <div class="footer_makes_sub_font"> Dec 31, 2016</div>
+                <a href="#" class="footer_post pb-4"> Success is not a good teacher failure makes you humble </a>
+                <div class="footer_makes_sub_font"> Dec 31, 2016</div>
+                <a href="#" class="footer_post pb-4"> Success is not a good teacher failure makes you humble </a>
+                <div class="footer_position_absolute">
+                    <img src="{% static 'images/footer_sub_tipik.png' %}" alt="img" class="width_footer_sub_img" />
+                </div> -->
+                <div class="footer_main_title py-3">Pages</div>
+                <ul class="footer_menu">
+                    <li>
+                        <a href="{% url 'Home_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'About_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Contactus_Page' %}">
+                            <i class="fa fa-angle-right"></i>
+                            <span class="ml-3">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid fh5co_footer_right_reserved">
+    <div class="container">
+        <div class="row  ">
+            <div class="col-12 col-md-6 py-4 Reserved"> 
+                &copy; Copyright 2023, All rights reserved. Design by 
+                <a href="#" title="Dhaduk Parth">Dhaduk Parth</a>. </div>
+            <div class="col-12 col-md-6 spdp_right py-4">
+                <a href="{% url 'Home_Page' %}" class="footer_last_part_menu">Home</a>
+                <a href="{% url 'About_Page' %}" class="footer_last_part_menu">About</a>
+                <a href="{% url 'Contactus_Page' %}" class="footer_last_part_menu">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>

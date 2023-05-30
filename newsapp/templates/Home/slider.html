@@ -1,0 +1,36 @@
+{% load static %}
+<div class="container-fluid paddding mb-5">
+    <div class="row mx-0">        
+        <div class="col-12">
+            <div class="row">
+
+                {% for banner in banner_panel %}
+                    <div class="col-md-4 col-sm-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
+                        <div class="fh5co_suceefh5co_height_2">
+                            {% if banner.image != None %}
+                                <img src="{{banner.image}}" alt="img" />
+                            {% else %}
+                                <img src="{{images|random}}" />
+                            {% endif %}
+                            <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                            <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                                <div class="">
+                                    <span class="color_fff">
+                                        <i class="fa fa-clock-o"></i>
+                                        {{banner.published_at|slice:10}}
+                                    </span>
+                                </div>
+                                <div>
+                                    <a href="{{banner.url}}" class="fh5co_good_font_2">
+                                        {{banner.title}}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>

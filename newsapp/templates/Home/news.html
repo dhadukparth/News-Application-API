@@ -1,0 +1,43 @@
+{% load static %}
+<div class="container-fluid pb-4 pt-4 paddding">
+    <div class="container paddding">
+        <div class="row mx-0">
+            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+                </div>
+
+                {% for news in all_news %}
+                    <div class="row pb-4">
+                        <div class="col-md-5">
+                            <div class="fh5co_hover_news_img">
+                                <div class="fh5co_news_img">
+                                    {% if news.image != None %}
+                                        <img src="{{news.image}}" />
+                                    {% else %}
+                                        <img src="{{images|random}}" />
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 animate-box">
+                            <a href="{{news.url}}" class="fh5co_magna py-2">
+                                {{news.title}}
+                            </a>
+                            <a href="single.html" class="fh5co_mini_time py-3">{{news.published_at|slice:10}}</a>
+                            <div class="fh5co_consectetur">
+                                {{news.description|slice:200}}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            {% include 'Pages/sidebar.html' %}
+        </div>
+        <div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
+            {% include 'Pages/pagination.html' %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+{% load static %}
+<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+    <div>
+        <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Categorys</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="fh5co_tags_all">
+        <a href="{% url 'Business_Page' %}" class="fh5co_tagg">Business</a>
+        <a href="{% url 'Technology_Page' %}" class="fh5co_tagg">Technology</a>
+        <a href="{% url 'Sports_Page' %}" class="fh5co_tagg">Sport</a>
+        <a href="{% url 'General_Page' %}" class="fh5co_tagg">General</a>
+        <a href="{% url 'World_Page' %}" class="fh5co_tagg">World</a>
+        <a href="{% url 'Health_Page' %}" class="fh5co_tagg">Health</a>
+        <a href="{% url 'Entertainment_Page' %}" class="fh5co_tagg">Entertainment</a>
+    </div>
+
+    <!-- <div>
+        <div class="fh5co_heading fh5co_heading_border_bottom pt-3 py-2 mb-4">Most Popular</div>
+    </div> -->
+
+    {% comment %} {% for popularNews in most_popular %}
+        <div class="row pb-3">
+            <div class="col-5 align-self-center">
+                <img src="{{popularNews.image}}" class="fh5co_most_trading" />
+            </div>
+            <div class="col-7 paddding">
+                <div class="most_fh5co_treding_font">
+                    {{popularNews.title|slice:50}}
+                </div>
+                <div class="most_fh5co_treding_font_123">{{popularNews.published_at|slice:10}}</div>
+            </div>
+        </div>
+    {% endfor %} {% endcomment %}
+
+</div>

@@ -1,0 +1,10 @@
+<div class="col-12 pb-4 pt-4 d-flex justify-content-around align-items-center">
+    {% if all_news_pagination.offset != 0 %}
+        <a href="?page={{page_active|add:'-1'}}" class="btn_mange_pagging mr-2">
+            <i class="fa fa-long-arrow-left mr-2"></i>Previous
+        </a>
+    {% endif %}
+    <a href="?page={{page_active|add:'+1'}}" class="btn_mange_pagging">
+        Next <i class="fa fa-long-arrow-right ml-2"></i>
+    </a>
+</div>

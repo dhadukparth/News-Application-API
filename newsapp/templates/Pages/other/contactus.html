@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block pageBlock %}
+
+    <div class="container">
+        <div class="contact_title my-3">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact_form">
+            <form action="#">
+                <div class="filed_box">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="" id="fullname" class="input_box">
+                </div>
+                <div class="filed_box">
+                    <label for="emailaddress">Email</label>
+                    <input type="email" name="" id="emailaddress" class="input_box">
+                </div>
+                <div class="filed_box">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="" id="subject" class="input_box">
+                </div>
+                <div class="filed_box">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" rows="10" class="input_box"></textarea>
+                </div>
+                <div class="filed_box">
+                    <button type="submit" class="contact_btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock pageBlock %}

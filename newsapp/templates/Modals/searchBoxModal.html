@@ -1,0 +1,19 @@
+<div class="modal fade" id="searchModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg w-100 postion" role="document" style="position: absolute; top: 15%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <form method="get" action="{% url 'search' %}">
+                            <div class="form-group m-0 position-relative">
+                                <input type="text" class="form-control" name="q" id="searchModal" placeholder="Search Any Keyword...">
+                                <button type="submit" class="btn btn-outline-primary search-btn">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
